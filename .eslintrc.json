@@ -29,6 +29,7 @@
         "jest-dom"
     ],
     "rules": {
+        "@typescript-eslint/no-var-requires": "off",
         "react/jsx-uses-react": "off",
         "react/react-in-jsx-scope": "off",
         "testing-library/no-node-access": "off"
