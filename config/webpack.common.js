@@ -1,6 +1,7 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
 
 const ruleForAssets = {
   type: 'asset',
@@ -23,6 +24,11 @@ module.exports = {
   module: { rules },
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
+    plugins: [
+      new TsconfigPathsPlugin({
+        extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
+      }),
+    ],
   },
   cache: {
     type: 'filesystem',
