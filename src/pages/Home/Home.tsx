@@ -1,12 +1,11 @@
 import reactLogo from '@/assets/react.svg'
-import { IWelcomeMessage } from '@/types/app'
 import React from 'react'
 
 export interface HomeInterface {
-  name: string
+  name?: string
 }
 
-const Home: React.FC<HomeInterface> = ({ name }: IWelcomeMessage) => {
+const Home: React.FC<HomeInterface> = ({ name }) => {
   return (
     <>
       <h1>Home</h1>
