@@ -1,19 +1,11 @@
-import { IWelcomeMessage } from './types/app'
+import { Home } from '@/pages'
 
-function App({ name }: IWelcomeMessage) {
+function App() {
   return (
     <>
-      <div>Hello {name}!</div>
+      <Home name="react" />
     </>
   )
-}
-
-/**
- * @param {string} name
- * When name is not specified, it is assumed to be the defaultProps
- */
-App.defaultProps = {
-  name: 'React',
 }
 
 export default App
