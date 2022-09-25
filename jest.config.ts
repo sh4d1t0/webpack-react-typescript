@@ -20,11 +20,7 @@ export default async (): Promise<Config> => {
     roots: ['<rootDir>/src'],
     setupFilesAfterEnv: ['<rootDir>/jest-setup.ts'],
     testEnvironment: 'jsdom',
-    testPathIgnorePatterns: [
-      '/node_modules/',
-      '\\.cache',
-      '<rootDir>.*/public',
-    ],
+    testPathIgnorePatterns: ['/node_modules/', '\\.cache', '<rootDir>.*/public'],
     testEnvironmentOptions: {
       url: 'http://localhost',
     },

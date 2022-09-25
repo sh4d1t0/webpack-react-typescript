@@ -1,6 +1,6 @@
+import reactLogo from '@/assets/react.svg'
 import { IWelcomeMessage } from '@/types/app'
 import React from 'react'
-import reactLogo from '@/assets/react.svg'
 
 export interface HomeInterface {
   name: string

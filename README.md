@@ -1,9 +1,9 @@
 # Getting starting with React
 
 This base project was made with the purpose of having more control
-over our projects, having full control over each of the webpack, 
-jest, testing-library, and babel plugins. 
-Unlike using create-react-app where there is already a 
+over our projects, having full control over each of the webpack,
+jest, testing-library, and babel plugins.
+Unlike using create-react-app where there is already a
 base configuration without many options to choose from.
 
 Technologies used:
@@ -15,9 +15,11 @@ Technologies used:
 - Jest 29.x
 - Testing-library 13.x
 - Eslint 8.x
+- Emotion
+- Styled Components
 
-In addition to the technologies mentioned above, which are 
-included in a react base project, the following were used to make 
+In addition to the technologies mentioned above, which are
+included in a react base project, the following were used to make
 the work more efficient:
 
 - Prettier 2.x
@@ -28,22 +30,26 @@ the work more efficient:
 
 In the project directory, you can run:
 
+#### start the project on `http://localhost:3000`
+
 ```shell
-# start the project on `http://localhost:3000`
 npm run dev
 ```
 
+#### run tests
+
 ```shell
-# run tests
 npm test
 ```
 
-```shell
-# run tests with coverage enabled
-npm run test:coverage
-````
+#### run tests with coverage enabled
 
 ```shell
-# Build the project for production `/dist` folder
+npm run test:coverage
+```
+
+#### Build the project for production `/dist` folder
+
+```shell
 npm run build
 ```
