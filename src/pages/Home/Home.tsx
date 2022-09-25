@@ -1,5 +1,5 @@
-import React from 'react'
 import { IWelcomeMessage } from '@/types/app'
+import React from 'react'
 
 export interface HomeInterface {
   name: string
