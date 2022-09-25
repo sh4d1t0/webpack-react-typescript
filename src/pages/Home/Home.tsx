@@ -1,11 +1,8 @@
 import reactLogo from '@/assets/react.svg'
-import React from 'react'
+import { HomeInterface } from '@/pages'
+import { FC } from 'react'
 
-export interface HomeInterface {
-  name?: string
-}
-
-const Home: React.FC<HomeInterface> = ({ name }) => {
+const Home: FC<HomeInterface> = ({ name }) => {
   return (
     <>
       <h1>Home</h1>
