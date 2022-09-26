@@ -1,1 +1,1 @@
-export * from './layout.styled.component'
+export { default as LayoutContainer } from './layout.styled.component'
