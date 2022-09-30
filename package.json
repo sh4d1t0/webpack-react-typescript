@@ -81,7 +81,7 @@
       "prettier --write"
     ],
     "*.{ts,tsx}": [
-      "jest --watchAll=false --findRelatedTests --bail"
+      "jest --watchAll=false --findRelatedTests --bail --passWithNoTests"
     ]
   }
 }

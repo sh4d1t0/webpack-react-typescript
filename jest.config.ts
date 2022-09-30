@@ -16,8 +16,8 @@ const jestConfig: JestConfigWithTsJest = {
   moduleNameMapper: {
     '.+\\.(css|styl|less|sass|scss)$': `identity-obj-proxy`,
     '.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': `<rootDir>/__mocks__/fileMock.js`,
+    // Paths be will always at the end
     ...pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' }),
-    //'^@/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: ['node_modules'],
   roots: ['<rootDir>/src'],
