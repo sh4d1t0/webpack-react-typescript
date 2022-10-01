@@ -1,4 +1,3 @@
-const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 const { merge } = require('webpack-merge')
 const common = require('./webpack.common')
 
@@ -9,15 +8,11 @@ const ruleForStyles = {
 
 const ruleForJavascript = {
   test: /\.[jt]sx?$/,
-  exclude: /node_modules/,
-  use: [
-    {
-      loader: require.resolve('babel-loader'),
-      options: {
-        plugins: [require.resolve('react-refresh/babel')].filter(Boolean),
-      },
-    },
-  ],
+  loader: 'esbuild-loader',
+  options: {
+    loader: 'tsx',
+    target: 'esnext',
+  },
 }
 
 const rules = [ruleForJavascript, ruleForStyles]
@@ -39,7 +34,6 @@ const devConfig = {
     historyApiFallback: true,
     hot: true,
   },
-  plugins: [new ReactRefreshWebpackPlugin()].filter(Boolean),
   devtool: 'eval-source-map',
 }
 
