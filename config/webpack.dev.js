@@ -22,7 +22,7 @@ const devConfig = {
   mode: 'development',
   module: { rules },
   devServer: {
-    open: true, // open browser
+    open: false, // open browser
     port: 3000,
     compress: true,
     client: {

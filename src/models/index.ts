@@ -1,1 +1,2 @@
-export * from './counter.type'
+export * from './routes';
+export * from './counter.type';
