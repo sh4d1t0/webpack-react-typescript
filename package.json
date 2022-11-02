@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "another base project with webpack babel react with typescript support",
   "main": "index.js",
+  "engines": {
+    "node": ">=16.18.0"
+  },
   "scripts": {
     "build": "webpack --config config/webpack.prod.js",
     "dev": "webpack serve --config config/webpack.dev.js",
