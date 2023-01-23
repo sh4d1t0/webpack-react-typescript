@@ -12,7 +12,7 @@ const Home = lazy(() => import('@/pages/Home/Home'))
 
 function App() {
   return (
-    <Suspense fallback={<>Cargando...</>}>
+    <Suspense fallback={<>loading...</>}>
       <Provider store={store}>
         <LayoutContainer>
           <BrowserRouter>

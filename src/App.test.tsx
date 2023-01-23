@@ -7,13 +7,24 @@ describe('App', () => {
   afterEach(jest.clearAllMocks)
   afterEach(cleanup)
 
-  it('render hello react', async () => {
+  it('render loading...', async () => {
     render(
       <Provider store={store}>
         <App />
       </Provider>
     )
-    const textElement = screen.getByText(/hello react/i)
+    const textElement = screen.getByText(/loading/i)
+    expect(textElement).toBeInTheDocument()
+  })
+
+  it('render hello', async () => {
+    render(
+      <Provider store={store}>
+        <App />
+      </Provider>
+    )
+    // verify page content for default route
+    const textElement = screen.getByText(/hello/i)
     expect(textElement).toBeInTheDocument()
   })
 })
