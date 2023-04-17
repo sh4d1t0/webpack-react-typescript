@@ -1,4 +1,4 @@
-const { ESBuildMinifyPlugin } = require('esbuild-loader')
+const { EsbuildPlugin } = require('esbuild-loader')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { ProvidePlugin } = require('webpack')
 const { merge } = require('webpack-merge')
@@ -39,7 +39,7 @@ const prodConfig = {
   devtool: 'source-map',
   optimization: {
     minimizer: [
-      new ESBuildMinifyPlugin({
+      new EsbuildPlugin({
         target: 'esnext',
         css: true,
       }),
