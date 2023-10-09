@@ -9,7 +9,7 @@ const Home: FC<HomeInterface> = ({ name }) => {
     <>
       <h1>Home</h1>
       <img src={reactLogo} className="logo react" alt="React logo" />
-      <h2>Hello {name}!</h2>
+      <h2>Hello, this is {name}!</h2>
       <CounterRender />
       <Counter />
     </>
